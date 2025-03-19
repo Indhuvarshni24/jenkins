@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "Indhuvarshni"
+        IMAGE_NAME = "Indhuvarshni/myapp"
         REGISTRY = "docker.io"
-        DOCKER_CREDENTIALS_ID = "Indhuvarshni"
-        GITHUB_CREDENTIALS_ID = "Indhuvarshni24"
-        APP_DIR = "/opt/docker-kec"
+        DOCKER_CREDENTIALS_ID = "docker"
+        GITHUB_CREDENTIALS_ID = "github"
+        APP_DIR = "/home/vboxuser/jenkins/Jenkinsfile"
     }
 
     stages {
